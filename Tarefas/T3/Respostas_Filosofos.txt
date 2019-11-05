@@ -1,0 +1,9 @@
+(*)   :
+     Para o código descrito os filósofos pegam apenas um garfo por vez, sendo pela direita ou esquerda, nunca pegando ambos os garfos de uma vez.       
+
+(**)  :        
+     Fazendo os filósofos pegarem os garfos a sua esquerda o código entra em DEADLOCK. Visto que para comer os filósofos precisam ter ambos os garfos, ao pegarem cada um o garfo à sua esquerda, todos ficam esperando pela garfo a direita, que esta ocupado.
+     Vale ressaltar que o mesmo acontece se todos pegarem o garfo a sua direita.
+
+(***) :        
+     Para a solução do DEADLOCK, uma condição foi posta para o filósofo #0 pegar o garfo a sua direita, enquanto os outros filósofos pegam o garfo a sua esquerda. Essa solução evita o DEADLOCK pelo fato de acabar com espera circular, aonde cada um dos folósofos encontra-se à espera de um recurso que está sendo usado pelo filósofo seguinte.

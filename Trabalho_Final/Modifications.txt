@@ -1,0 +1,7 @@
+<!> Erros encontrados no trabalho:
+        Utilização de "sleep" para tornar as tarefas periódicas.
+
+<!> Solução e modificações:
+        Em um primeiro momento modificou-se o laço que havia dentro das 3 funções periódicas. O laço "do{} while(1)" foi substituido por "while(1){}".
+        Posteriormente, para solucionar o problema das funções periódicas, substitui-se as funções "sleep" pelas função disponibilizada no moodle pelo professor: "make_periodic" e "wait_period".
+        A função "make_periodic" é invocada nas 3 funções periódicas (cada uma com seu determinado tempo) antes de iniciar o laço while, no final do laço, é invocada a função "wait_period".
